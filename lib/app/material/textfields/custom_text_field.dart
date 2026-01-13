@@ -15,6 +15,7 @@ class CustomTextField extends StatelessWidget {
   final String? labelText;
   final bool obscureText;
   final suffixIcon;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -34,6 +35,7 @@ class CustomTextField extends StatelessWidget {
               color: AppColors.secondaryText,
             ),
             suffixIcon: suffixIcon,
+            /// TODO : Move this to app theme
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: AppColors.borderColor),
             ),

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+
+/// Todo : App ablity for loading state
+/// Also disabled state or enabled
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
