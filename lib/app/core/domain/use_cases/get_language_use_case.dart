@@ -7,7 +7,9 @@ import 'package:injectable/injectable.dart';
 @lazySingleton
 class GetAppLanguageUseCase {
   GetAppLanguageUseCase(this._languageCacheRepository);
+  
   final LanguageCacheRepository _languageCacheRepository;
+
   Future<Either<Failure, AppLanguageCodeEnum>> call() {
     return _languageCacheRepository.getSavedLanguage();
   }

@@ -1,12 +1,16 @@
 
 import 'package:dio/dio.dart';
 
+/// TODO: ADD UNEXPECTEDEXECPTION
+/// TO cache else case
+
 class Failure {
   final String message;
   Failure(this.message);
   @override
   String toString() => message;
 }
+
 class ServiceFailure extends Failure {
   ServiceFailure(super.errorMessage);
 
@@ -79,9 +83,11 @@ class ServiceFailure extends Failure {
     }
   }
 }
+
 class CacheFailure extends Failure {
 CacheFailure() : super("Cache Error Occurred");
 }
+
 class NetworkFailure extends Failure {
   NetworkFailure() : super("No Internet Connection");
 }

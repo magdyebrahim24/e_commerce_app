@@ -15,7 +15,8 @@ class OtpVerificationSection extends StatefulWidget {
 }
 
 class _PinputExampleState extends State<OtpVerificationSection> {
-  late final TextEditingController pinController;
+   final TextEditingController pinController =TextEditingController();
+   // TODO :REMOVE LATE
   late final FocusNode focusNode;
   late final GlobalKey<FormState> formKey;
 
@@ -24,7 +25,6 @@ class _PinputExampleState extends State<OtpVerificationSection> {
     super.initState();
 
     formKey = GlobalKey<FormState>();
-    pinController = TextEditingController();
     focusNode = FocusNode();
   }
 

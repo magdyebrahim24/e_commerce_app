@@ -29,13 +29,13 @@ class CustomTextField extends StatelessWidget {
         TextFormField(
           obscureText: obscureText,
           style: TextStyles.medium15.copyWith(color: AppColors.primaryText),
+             /// TODO : Move this to app theme
           decoration: InputDecoration(
             hintText: hintText ?? '',
             hintStyle: TextStyles.medium15.copyWith(
               color: AppColors.secondaryText,
             ),
             suffixIcon: suffixIcon,
-            /// TODO : Move this to app theme
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: AppColors.borderColor),
             ),
